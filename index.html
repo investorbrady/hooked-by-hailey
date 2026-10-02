@@ -1,0 +1,110 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hooked By Hailey | Handmade Crochet Plushies</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--pink:#f7a8c4;--pink2:#e8679a;--cream:#fff8f0;--ink:#4a3540;--mint:#bfe8d2}
+*{box-sizing:border-box}body{margin:0;font-family:Nunito,sans-serif;background:var(--cream);color:var(--ink)}
+header{text-align:center;padding:36px 16px 24px;background:linear-gradient(160deg,#ffd6e5,#ffeef4 60%,var(--cream))}
+h1{font-family:Fredoka,sans-serif;font-size:clamp(2.2rem,8vw,3.6rem);margin:0;color:var(--pink2)}
+.tag{font-size:1.1rem;margin:8px 0 0}
+main{max-width:1000px;margin:0 auto;padding:16px}
+h2{font-family:Fredoka,sans-serif;color:var(--pink2);text-align:center;margin:28px 0 6px}
+.hint{text-align:center;margin:0 0 16px;opacity:.8}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+.card{border:3px solid transparent;background:#fff;border-radius:18px;padding:8px;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.07);display:flex;flex-direction:column;align-items:center;font:inherit;color:inherit;transition:transform .15s}
+.card:hover{transform:translateY(-3px)}.card.sel{border-color:var(--pink2)}
+.card img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px}
+.name{font-family:Fredoka,sans-serif;font-weight:600;margin-top:6px}.price{color:var(--pink2);font-weight:700}
+form{background:#fff;border-radius:20px;padding:22px;box-shadow:0 3px 12px rgba(0,0,0,.08);max-width:560px;margin:0 auto}
+label{display:block;font-weight:700;margin:14px 0 4px}
+input,select,textarea{width:100%;padding:11px;border:2px solid #f0d3df;border-radius:10px;font:inherit;background:#fffafc}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--pink2)}
+.row{display:flex;gap:12px}.row>div{flex:1}
+.btn{display:block;width:100%;margin-top:20px;padding:14px;border:0;border-radius:999px;background:var(--pink2);color:#fff;font:700 1.15rem Fredoka,sans-serif;cursor:pointer;text-align:center;text-decoration:none}
+.venmo{background:#008CFF;max-width:560px;margin:0 auto}
+.pay{max-width:560px;margin:0 auto;text-align:center}
+footer{text-align:center;padding:30px 16px;opacity:.7;font-size:.9rem}
+</style></head><body>
+<header><h1>Hooked By Hailey</h1><p class="tag">Handmade crochet plushies, made with love 🧶</p></header>
+<main>
+<h2>Pick your plushie</h2><p class="hint">Tap one to add it to your order form.</p>
+<div class="grid">
+<button type="button" class="card" data-item="Ghost - $10"><img src="images/ghost.jpg" alt="Crocheted ghost" loading="lazy"><span class="name">Ghost</span><span class="price">$10</span></button>
+<button type="button" class="card" data-item="Jellyfish - $5"><img src="images/jellyfish.jpg" alt="Crocheted jellyfish" loading="lazy"><span class="name">Jellyfish</span><span class="price">$5</span></button>
+<button type="button" class="card" data-item="Wiener Dog - $15"><img src="images/wiener-dog.jpg" alt="Crocheted wiener dog" loading="lazy"><span class="name">Wiener Dog</span><span class="price">$15</span></button>
+<button type="button" class="card" data-item="Duck - $10"><img src="images/duck.jpg" alt="Crocheted duck" loading="lazy"><span class="name">Duck</span><span class="price">$10</span></button>
+<button type="button" class="card" data-item="Duck with Hat - $15"><img src="images/duck-with-hat.jpg" alt="Crocheted duck with hat" loading="lazy"><span class="name">Duck with Hat</span><span class="price">$15</span></button>
+<button type="button" class="card" data-item="Parrot - $10"><img src="images/parrot.jpg" alt="Crocheted parrot" loading="lazy"><span class="name">Parrot</span><span class="price">$10</span></button>
+<button type="button" class="card" data-item="Frog - $15"><img src="images/frog.jpg" alt="Crocheted frog" loading="lazy"><span class="name">Frog</span><span class="price">$15</span></button>
+<button type="button" class="card" data-item="Opossum - $10"><img src="images/opossum.jpg" alt="Crocheted opossum" loading="lazy"><span class="name">Opossum</span><span class="price">$10</span></button>
+<button type="button" class="card" data-item="Fish - $10"><img src="images/fish.jpg" alt="Crocheted fish" loading="lazy"><span class="name">Fish</span><span class="price">$10</span></button>
+<button type="button" class="card" data-item="Octopus - $5"><img src="images/octopus.jpg" alt="Crocheted octopus" loading="lazy"><span class="name">Octopus</span><span class="price">$5</span></button>
+<button type="button" class="card" data-item="Bunny - $10"><img src="images/bunny.jpg" alt="Crocheted bunny" loading="lazy"><span class="name">Bunny</span><span class="price">$10</span></button>
+<button type="button" class="card" data-item="Baby Axolotl - $5"><img src="images/baby-axolotl.jpg" alt="Crocheted baby axolotl" loading="lazy"><span class="name">Baby Axolotl</span><span class="price">$5</span></button>
+<button type="button" class="card" data-item="Axolotl - $10"><img src="images/axolotl.jpg" alt="Crocheted axolotl" loading="lazy"><span class="name">Axolotl</span><span class="price">$10</span></button>
+<button type="button" class="card" data-item="Dinosaur - $15"><img src="images/dinosaur.jpg" alt="Crocheted dinosaur" loading="lazy"><span class="name">Dinosaur</span><span class="price">$15</span></button>
+<button type="button" class="card" data-item="Dragon - $15"><img src="images/dragon.jpg" alt="Crocheted dragon" loading="lazy"><span class="name">Dragon</span><span class="price">$15</span></button>
+<button type="button" class="card" data-item="Poppable Mushroom - $10"><img src="images/mushroom.jpg" alt="Crocheted poppable mushroom" loading="lazy"><span class="name">Poppable Mushroom</span><span class="price">$10</span></button>
+<button type="button" class="card" data-item="Stress Blob - $10"><img src="images/stress-blob.jpg" alt="Crocheted stress blob" loading="lazy"><span class="name">Stress Blob</span><span class="price">$10</span></button>
+</div>
+<h2 id="order">Place an order</h2>
+<form action="https://formsubmit.co/hannahai000@usd232.org" method="POST">
+<input type="hidden" name="_subject" value="New Hooked By Hailey order!">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="__NEXT__">
+<input type="text" name="_honey" style="display:none">
+<label for="item">Item</label>
+<select id="item" name="Item" required><option value="" disabled selected>Choose a plushie</option>
+<option value="Ghost - $10">Ghost ($10)</option>
+<option value="Jellyfish - $5">Jellyfish ($5)</option>
+<option value="Wiener Dog - $15">Wiener Dog ($15)</option>
+<option value="Duck - $10">Duck ($10)</option>
+<option value="Duck with Hat - $15">Duck with Hat ($15)</option>
+<option value="Parrot - $10">Parrot ($10)</option>
+<option value="Frog - $15">Frog ($15)</option>
+<option value="Opossum - $10">Opossum ($10)</option>
+<option value="Fish - $10">Fish ($10)</option>
+<option value="Octopus - $5">Octopus ($5)</option>
+<option value="Bunny - $10">Bunny ($10)</option>
+<option value="Baby Axolotl - $5">Baby Axolotl ($5)</option>
+<option value="Axolotl - $10">Axolotl ($10)</option>
+<option value="Dinosaur - $15">Dinosaur ($15)</option>
+<option value="Dragon - $15">Dragon ($15)</option>
+<option value="Poppable Mushroom - $10">Poppable Mushroom ($10)</option>
+<option value="Stress Blob - $10">Stress Blob ($10)</option>
+</select>
+<div class="row"><div><label for="color">Color</label>
+<select id="color" name="Color" required>
+<option>Same as pictured</option>
+<option>White / Cream</option>
+<option>Pink</option>
+<option>Red</option>
+<option>Orange</option>
+<option>Yellow</option>
+<option>Green</option>
+<option>Light Blue</option>
+<option>Blue</option>
+<option>Purple</option>
+<option>Gray</option>
+<option>Brown</option>
+<option>Black</option>
+<option>Other (tell me in the notes)</option>
+</select></div><div style="max-width:110px"><label for="qty">Quantity</label><input id="qty" name="Quantity" type="number" min="1" value="1" required></div></div>
+<label for="name">Full name</label><input id="name" name="Full Name" autocomplete="name" required>
+<label for="address">Address</label><input id="address" name="Address" autocomplete="street-address" placeholder="Street, city, state, ZIP" required>
+<label for="phone">Phone number</label><input id="phone" name="Phone" type="tel" autocomplete="tel" required>
+<label for="notes">Notes (optional)</label><textarea id="notes" name="Notes" rows="3" placeholder="Anything else Hailey should know?"></textarea>
+<button class="btn" type="submit">Send my order</button>
+</form>
+<h2>Pay with Venmo</h2>
+<div class="pay"><p>Send payment to <strong>@HaileyHanna12</strong> and put your name and item in the note.</p>
+<a class="btn venmo" href="https://venmo.com/u/HaileyHanna12" target="_blank" rel="noopener">Pay Hailey on Venmo</a></div>
+</main>
+<footer>Hooked By Hailey · Every piece is handmade, so each one is a little unique.</footer>
+<script>
+document.querySelectorAll('.card').forEach(c=>c.addEventListener('click',()=>{
+document.querySelectorAll('.card').forEach(x=>x.classList.remove('sel'));c.classList.add('sel');
+document.getElementById('item').value=c.dataset.item;document.getElementById('order').scrollIntoView({behavior:'smooth'});}));
+document.querySelector('input[name=_next]').value=new URL('thanks.html',location.href).href;
+</script></body></html>
